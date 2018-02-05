@@ -15,9 +15,7 @@
 
 		<a class="products item" href="products.php">products</a>
 
-		<a class="support item" href="support.php">support</a>
-
-		<a class="affiliates item" href="affiliates.php">affiliates</a>
+		<a class="faq item" href="faq.php">faq</a>
 
 		<a class="pricing item" href="pricing.php">pricing</a>
 
