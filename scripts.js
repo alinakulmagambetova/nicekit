@@ -11,3 +11,11 @@ $(document).scroll( function()
 		$( '.menu' ).removeClass( 'pinned' );
 	}
 } );
+
+$(document).ready( function() 
+{
+	$( ".question" ).click( function()
+	{
+		$( ".answer" ).toggle( 1000 );
+	} );
+} );
