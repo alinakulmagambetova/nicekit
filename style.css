@@ -143,10 +143,12 @@ a:visited {
 }
 .faq-page .item .question {
   position: relative;
+  cursor: pointer;
 }
-.faq-page .item .question .answer {
+.faq-page .item .answer {
   display: none;
   position: relative;
+  cursor: default;
 }
 .faq-page .clicked {
   display: block;
