@@ -14,8 +14,17 @@ $(document).scroll( function()
 
 $(document).ready( function() 
 {
+	/*
 	$( ".question" ).click( function()
 	{
-		$( ".answer" ).toggle( 1000 );
+
+		$( ".answer", $('.item.bbb')).toggle( 1000 );
+	} );
+	*/
+
+	$( ".faq-page .item" ).click( function()
+	{
+
+		$( ".answer", $( this ) ).toggleClass( 'opened' );
 	} );
 } );

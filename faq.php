@@ -14,6 +14,16 @@ include 'header.php';
 				ответ
 			</div>
 		</div>
+
+		<div class="item">
+			<div class="question">
+				вопрос2
+			</div>
+
+			<div class="answer">
+				ответ2
+			</div>
+		</div>
 	</div>
 
 <? 

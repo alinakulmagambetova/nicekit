@@ -136,7 +136,7 @@ a:visited {
   z-index: 1;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  font-size: 52px;
+  font-size: 22px;
   color: white;
   text-align: center;
   margin: auto;
@@ -149,6 +149,9 @@ a:visited {
   display: none;
   position: relative;
   cursor: default;
+}
+.faq-page .item .answer.opened {
+  display: block;
 }
 .faq-page .clicked {
   display: block;
