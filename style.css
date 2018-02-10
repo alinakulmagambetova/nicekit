@@ -138,19 +138,19 @@ a:visited {
   font-weight: 500;
   font-size: 22px;
   color: white;
-  text-align: center;
+  text-align: left;
   margin: auto;
 }
-.faq-page .item .question {
+.faq-page .item .q {
   position: relative;
   cursor: pointer;
 }
-.faq-page .item .answer {
+.faq-page .item .a {
   display: none;
   position: relative;
   cursor: default;
 }
-.faq-page .item .answer.opened {
+.faq-page .item .a.opened {
   display: block;
 }
 .faq-page .clicked {

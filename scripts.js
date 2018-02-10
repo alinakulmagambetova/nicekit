@@ -15,16 +15,17 @@ $(document).scroll( function()
 $(document).ready( function() 
 {
 	/*
-	$( ".question" ).click( function()
+	$( '.question' ).click( function()
 	{
 
-		$( ".answer", $('.item.bbb')).toggle( 1000 );
+		$( '.answer', $('.item.bbb')).toggle( 1000 );
 	} );
 	*/
 
-	$( ".faq-page .item" ).click( function()
+	$( '.faq-page .q' ).click( function()
 	{
+		//var thisItem = $( this ).closest( '.item' );
 
-		$( ".answer", $( this ) ).toggleClass( 'opened' );
+		$( '.a', $( this ).closest( '.item' ) ).toggleClass( 'opened' );
 	} );
 } );
