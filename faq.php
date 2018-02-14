@@ -775,6 +775,104 @@ include 'header.php';
 				</div>
 			</li>
 		</ol>
+		<div class="headline">
+			Kid wants to play some more today
+		</div>
+		<ol>
+			<li class='item' id='1'>
+				<div class='q'>
+					How  to add time for the subordinate user quickly? (Your kid wants to play some more...)
+				</div>
+				<div class='a'>
+					<p>You have several ways. First, you can open the <b>Control panel</b>. If the <b>Control panel</b> is not enabled please define the password in Boss session. </p>
+					<p>Then select the user whom you are going to add time. Then: </p>
+					<ol>
+					<li>
+					<p align="left">Simply set the time you need in panel <b>Today's control. Last remaining time</b> (Control panel-&gt;Computer time limitation-&gt;button <b>Today's control. Last remaining time</b>). </p>
+					</li>
+					<li>
+					<p align="left">Simply set for user the <b>Boss </b> rights. If the <b>Control panel </b> window is protected with password so the user can not change it. </p>
+					</li>
+					<li>
+					<p>If you need to delete the time range limit, simply uncheck <b>No time range </b> in panel <b>Computer time limit</b>. </p>
+					</li>
+					<li>
+					<p>Of course you can simply increase the time in panel <b>Computer time limit</b>. </p>
+					</li>
+					<li>You can get <b>Grand</b> for kid.</li>
+					</ol>
+					<p>Close the <b>Control panel </b> window. The changes take effect.</p>
+				</div>
+			</li>
+			<li class='item' id='1C'>
+				<div class='q'>
+					&nbsp;What is the prize (grant)?
+				</div>
+				<div class='a'><br>
+					<br>Time grant is a key word (key) and time bonus. 
+					<br>
+					<br>
+					The subordinate user can select <b>Get grant</b> item in popup menu in TB icon in tray.<br> 
+					Then user input a key word and receives the time bonus when the key is valid.
+					<br>
+					<br>
+					For example, after the child has made homework, you can tell him by the phone  the key word of the grant. 
+					The child will enter key and will receive additional time.<br><br>
+					Time grant is valid for all time limitation objects (sites, programs...)<br>
+				</div>
+			</li>
+			<li class='item' id='160329A'>
+				<div class='q'>
+					Is there a way to make a time grant apply to any computer?
+				</div>
+				<div class='a'>
+					<p>You can create new grants only on the PC where this grants will be used.<br>
+					If you use TB Pro, then you can connect remotely to others PC using TB Pro and
+					create grants for this PC.
+					</p>
+				</div>
+			</li>
+			<li class='item' id='150723_2'>
+				<div class='q'>
+					How to I create a time grant code for browser usage? It seems the only one I can create is for computer usage.
+					But if the computer usage is still valid but the browser usage is end of time…. How do I do that?
+				</div>
+				<div class='a'>
+					<p>Grants are universal. So you can use time grants for all users, for all time limited programs, websites, browsers...<br>
+					Kid can open the information panel in TB  -&gt; e.g. Browser panel and can click by Mouse the Grant picture, or kid can input the grant code directly in the TB Warning message (using Grant picture)
+					</p>
+				</div>
+			</li>
+			<li class='item' id='38'>
+				<div class='q'>
+					How to add time for program from Black List quickly? (Kid wants to play some more...) 
+				</div>
+				<div class='a'>
+					<p>Kid can use the <b>Grant</b> and input it in the warning window or in<b> My time limitation-&gt;Black and white lists of programs</b>-&gt;needed program-&gt;<b>Time limit</b>-&gt;
+					click on Grant image. <br>
+					<br>
+					Please check the option<b> Show black and white lists in Sub.session</b> on panel <b>Options-&gt;General</b> <br>
+					<br>
+					You have several ways.<br>
+					<br> 
+					At first you should open the <b>Control panel </b> any case. If the <b>Control panel </b> is not enabled please define the password in Boss session. </p>
+					<p>Then select the user whom you are going to add time. Then open panel <b>Black and white lists of programs</b>, select needed program or folder and uncheck <b>Active </b> column or push button <b>Program time limit</b> and : </p>
+					<ol>
+					<li>
+					<p>Simply set the time you need in panel <b>Last remaining time</b>. </p>
+					</li>
+					<li>
+					<p>If you need to delete the time range limit, simply uncheck <b>No time range </b> in panel <b>When allowed</b>. </p>
+					</li>
+					<li>
+					<p>Of course you can simply increase the time in panel <b>How much time allowed</b>. </p>
+					</li>
+					</ol>
+					<p>Close the <b>Program time limit </b> and <b>Control panel </b> windows. The changes take effect. </p>
+				</div>
+			</li>
+		</ol>
+
 
 	</div>
 
