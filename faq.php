@@ -1,10 +1,12 @@
 <? 
 
+$page = 'faq';
+
 include 'header.php';
 
 ?>
 
-	<div class='faq-page'>
+	<div class='content'>
 		<ol>
 			<li class='item' id='3'>
 				<div class='q'>

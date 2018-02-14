@@ -9,7 +9,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet">
 </head>
 
-<body>
+<body class="<? echo $page; ?> page">
 	<div class='menu'>
 		<a class='logo' href="/">NiceKit</a>
 

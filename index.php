@@ -1,5 +1,7 @@
 <? 
 
+$page = 'home';
+
 include 'header.php';
 
 ?>

@@ -1,5 +1,7 @@
 <? 
 
+$page = 'pricing';
+
 include 'header.php';
 
 ?>

@@ -1,5 +1,7 @@
 <? 
 
+$page = 'support';
+
 include 'header.php';
 
 ?>

@@ -1,5 +1,7 @@
 <? 
 
+$page = 'contacts';
+
 include 'header.php';
 
 ?>

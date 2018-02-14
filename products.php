@@ -1,5 +1,7 @@
 <? 
 
+$page = 'products';
+
 include 'header.php';
 
 ?>
