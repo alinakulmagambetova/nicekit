@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset='UTF-8'>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="jquery.min.js"></script>
 	<script src="scripts.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet">
