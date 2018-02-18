@@ -875,7 +875,1314 @@ include 'header.php';
 			</li>
 		</ol>
 
+		<div class="headline">
+			How to limit the Internet surfing
+		</div>
 
+		<ol>
+			<li class='item' id='16'>
+				<div class='q'>
+					How to limit the Internet surfing?
+				</div>
+				<div class='a'>
+					<p>Select <b>Browser time limitation </b> panel and define needed time limitation. <br><br>
+					If you want to disable internet in any time, please set 0 hours and 0 minutes in "per Day" or "per Week" sections.<br>
+					<br>
+					If you want to enable internet in any time, please set 24 hours and 0 minutes in "per Day" sections. <br>
+					<br>
+					You can use<b> Internet time limitation</b> for Boss users too (for self limitation).</p>
+				</div>
+			</li>
+			<li class='item' id='17'>
+				<div class='q'>
+					How to block some undesired web pages? 
+				</div>
+				<div class='a'>
+					<p>The Time Boss can do this. Please use settings on "Internet filter" page. <br>
+					<br>
+					All websites from table Forbidden Internet sites (Black list) will be blocked.<br>
+					<br>
+					For example: http:\\bad.com or www.bad.com or *.bad.com. <br>
+					<br>
+					<b>The best way is to use * before website name (for example *.bad.com).</b></p>
+					<p>The table Allowed Internet sites (White list)  contains allowed websites, ALL others websites will be blocked. &nbsp; <br>
+					So if the White list is not empty, only websites in it and homepage can be visited. </p>
+				</div>
+			</li>
+			<li class='item' id='140127'>
+				<div class='q'>
+					Can Time Boss stop https websites, e.g. https://facebook.com, https://youtube.com?
+				</div>
+				<div class='a'>
+					<p>Yes.<br> 
+					If you add *.facebook.com to TB <b>Black and White lists of internet sites</b> then both protocols http and https will
+					be blocked for facebook.com. See <a href="screenshots/tb_ie_filter_https2.jpg">here</a>.<br>
+					If you activate TB <b>Internet filter</b> then both protocols http and https will be filtered. See <a href="screenshots/tb_ie_filter_https.jpg">here</a>.
+					</p>
+				</div>
+			</li>
+			<li class='item' id='17AA'>
+				<div class='q'>
+					TB is almost the best parental control application I ever used. 
+					However, I'd to get the possibility to block a webpage/URL/Domain using a scheduler so that my kids could or couldn't use a website/blog when they are allowed to do it...
+				</div>
+				<div class='a'>
+				  <p>Open page "Black and white lists of internet sites", add needed websites (for example *.facebook.com) to "Black list"
+				and set for this websites time limitation (button with Clock image at right, you can use time table, time range...). </p>
+				</div>
+			</li>
+			<li class='item' id='130927A'>
+				<div class='q'>
+					How kid can see remaining time for websites and programs from Black and White lists?
+				</div>
+				<div class='a'>
+					<p>Please open TB-&gt;Contol panel-&gt;Options-&gt;General page and
+					check options "Show Black and White list in Sub. session".
+					In this case kid can open Black and White lists for websites and programs
+					(in read only mode) and get information about remaining time
+					for each website or program.<br><br>Additionally kid can use grant for any of websites (button with Clock at right).
+					</p>
+				</div>
+			</li>
+			<li class='item' id='17AB'>
+				<div class='q'>
+					Is it possible setup a daily time limit for Yahoo Mail, YouTube and IM?
+				</div>
+				<div class='a'>
+					<p>Yes of course.<br><br>
+					Please add Yahoo Mail page (*.mail.yahoo.com) and
+					YouTube (*.youtube.com) to internet Black list and set time limitation for them.<br>
+					<br>
+					Add your IM program to programs Black list and set time limitation for it. 
+					</p> 
+				</div>
+			</li>
+			<li class='item' id='170808'>
+				<div class='q'>
+					How works the time limitation for websites in groups?
+				</div>
+				<div class='a'>
+					<p>All websites from group get the summary time limit from this group.<br>
+					E.g. if you set  3h for "wikipedia" group so
+					the totally summary time using of websites from this group
+					(www.wikipedia.eu + www.wikipedia.com + www.wikipedia.org)
+					is 3h (not 3 h for each website from group) per day.<br><br>
+					Additionally we recommend to use '*.youtube.com' notation instead
+					'https:\\www.youtube.com' for websites.<br>
+					In this case all subdomens on youtube (e.g. video.youtube.com, games.youtube.com ...) will be time limited too.
+					</p>
+				</div>
+			</li>
+			<li class='item' id="17A">
+				<div class='q'>
+					I would like for example to allow a user to have 1 hour internet time/day, but only 30 min of Facebook. How I can set this up?
+				</div>
+				<div class='a'>
+					  <p>1. Open page "Browser time limitation" for this user and set 1 hour time limitation.
+					  </p>
+					  <p>2. Open page "Black and white lists of internet sites" and add "*.facebook.com" to "Black list".<br>
+								<br>
+					  Press button "Time limit" (at right) and set 30 min time limitation for this website.
+					  </p>
+					  <p>3. If you use version &lt;3.15 then check option "Allow only Internet Explorer (IE) using" on page "Internet filter".</p>
+				</div>
+			</li>
+			<li class='item' id='18A'>
+				<div class='q'>
+					My husband has been unable to access the internet using Internet Explorer.
+					His account is set as a Boss account and there are no Time Boss restrictions on it. Why?
+				</div>
+				<div class='a'>
+					<p>Please open TB Event log and check how TB determine your husband - may be
+					as Someone - then edit husband user name in TB (the right user name you can
+					see in the Event log in the Someone Logon event ).
+					<br>
+					<br>
+					If all is ok with user name  - then check the TB Internet filter for your husband.<br>
+					<br>
+					Maybe the "Allowed Internet sites (White list)" is not empty. <br>
+					<br>
+					If so - only websites
+					from "White list" are allowed.</p>
+				</div>
+			</li>
+			<li class='item' id='45'>
+				<div class='q'>
+					Is there a way that you can lock the internet (IE zero time) except for 1 or
+		2 allowed internet sites that can have unlimited time?
+				</div>
+				<div class='a'>
+					<p>Yes, to do that (one way...):
+					<br>
+					<br>
+					1. Open Time Boss <b>Control panel</b>.
+					<br>
+					<br>
+					2. Add your allowed websites (for example "*.google.com") to table <b>Allowed Internet sites (White list)</b> 
+					on panel <b>Black and white lists of internet sites</b> for the needed user.<br>
+					Also you can set time limitation for thise websites - press button <b>Time limit</b>.<br>
+					<br>
+					3. Check option <b>Allow only Internet Explorer (IE)</b> using on page <b>Internet filter</b>.<br><br>
+					4. Close Time Boss <b>Control panel.</b>			<br>
+					<br>
+					5.Restart IE (if it is opened)<br>
+					<br>
+					Only IE will be allowed to browse web without time limitation
+					and only your chosen websites and the default home page will be allowed in IE.</p>
+				</div>
+			</li>
+			<li class='item' id='160915C'>
+				<div class='q'>
+					How to allow in White list the HTML files from the local folder on PC (son learns HTML)?
+				</div>
+				<div class='a'>
+					<p>You should add the needed folder (e.g. d:/123) in the <b>White list</b> twice (one is valid for IE  and one for others browsers):<br><br>
+					http://d:/123<br>
+					http://file:///d:/123
+					</p>
+				</div>
+			</li>
+			<li class='item' id='170303A'>
+				<div class='q'>
+					I want my KIDs account to can always open any internet browser (for HTML learning purposes),but I want to can use internet ONLY from 16:00 to 18:00 every day including weekends.
+				</div>
+				<div class='a'>
+					<p>TB limits by time all web-browsers without taking into account internet is used (web-sites) or not (local html files on PC).<br><br>
+					If you know the name of local folder with HTML files so you can use <b>Black and White lists of web-sites</b> in TB.
+					In this case activate the White list, set needed time limit  (from 16:00 to 18:00) for all web-sites and
+					24:00 time limit for local folder (d:\TEST) with HTML files. See <a href="screenshots/tb_white_list.png">here</a>.<br>
+					<br>
+					Web-browser time limit should be 24:00 (not limited) in this case.
+					</p>
+				</div>
+			</li>
+			<li class='item' id='18B'>
+				<div class='q'>
+					Can I block Firefox (Edge, Chrome, Opera...)?
+				</div>
+				<div class='a'>
+					<p>Of course you can limit the Firefox (Edge, Chrome, Opera...) using time.<br>
+					<br>
+					Since version 3.15 Time Boss supports all browsers. So the <b>Black and White lists of websites</b>, 
+					the time limitation of websites and websites monitoring are working in all browsers.<br>
+					<br>
+					The Internet filter of bad words is active in IE only.<br>
+					With Time Boss you can disable all  browsers except Internet Explorer if needed<b>(Internet Filter-&gt;Allow only Internet Explorer (IE) using</b>).</p>
+				</div>
+			</li>
+			<li class='item' id='18C'>
+				<div class='q'>
+					It is possible to stop use of Metro programs and Metro IE in Windows 8?
+				</div>
+				<div class='a'>
+					<p>Yes, you can add Metro programs in Black list (see <a href="screenshots/tb_win8_bl.jpg">picture</a>).<br>
+					If needed you can get time limitation for this programs.<br>
+					You can disable IE in Metro at all for your kid using option <b>Disable IE in Metro mode</b> on panel <b>Internet filter</b>.<br>
+					But this option is available only since version 3.07.002.		  </p>
+				</div>
+			</li>
+			<li class='item' id='19'>
+				<div class='q'>
+					I'm using other internet-guardian program, can I use Time Boss? 
+				</div>
+				<div class='a'>
+					<p>Yes, you can. <br>
+					In this case please open <b>Control panel-&gt;Options-&gt;Internet filter-&gt;Internet monitor</b> and uncheck <b>Enable</b> option. </p>
+				</div>
+			</li>
+			<li class='item' id='111213C'>
+				<div class='q'>
+					On one PC internet filter doesn't work...
+				</div>
+				<div class='a'>
+					<p>Please open in IE <b>Tools-&gt;Manage Add-ons-&gt;Toolbars and Extensions</b>
+					and check -  is "Time Boss IE monitor" enabled or not.<br>
+					If it is not enabled - enable it and restart IE.<br>
+					<br>
+					Additionally check in Time Boss:<br>
+					1.Is Time Boss IE Monitor active or not (<b>TB-&gt;Control panel-&gt;Options-&gt;Internet filter-&gt;Internet monitor</b>)<br>
+					2.The name of the user is correct in Time Boss or not (see the LogOn event in event log)
+					</p>
+				</div>
+			</li>
+			<li class='item' id='140418'>
+				<div class='q'>
+					I have set the 'forbidden words and phrases' internet filter off 'sex' (rather it is in the default list).  
+					However, when I checked on the screenshot at the event log, I found my boy searched for the word 'sex' using Google Search. It leads him to www.cosmopolitan.com.  Why is that so?
+				</div>
+				<div class='a'>
+					<p>May be google.com or this website is "home page" in IE, in this case set another website (e.g. www.cnn.com) as Block page in TB
+					(<b>TB-&gt;Control panel-&gt;Options-&gt;Internet filter-&gt;Internet monitor-&gt;Use website as "Block page"</b>)<br>
+					May be kid uses IE InPrivate mode, in this case disable using IE In Private mode for him (<b>TB-&gt;Internet filter-&gt;Disable  "InPrivate" mode in IE</b>).
+					<br>
+					Also see <a href="http://nicekit.com/tbfaq.htm#111213C">here</a> and <a href="http://nicekit.com/tbfaq.htm#131227A">here</a></p>
+				</div>
+			</li>
+			<li class='item' id='131227'>
+				<div class='q'>
+					I use Windows 8.1. Why Time Boss IE monitor can not be installed in Internet Explorer?
+				</div>
+				<div class='a'>
+					<p>Please download and install Time Boss (Pro) version 3.09 and above. How to upgrade is <a href="#13">here</a>.
+					</p>
+				</div>
+			</li>
+			<li class='item' id='131227A'>
+				<div class='q'>
+					Why Time Boss IE monitor does not work on Windows 8.1 (no filtering, no internet events in events log)?
+				</div>
+				<div class='a'>
+					<p>This problem can be only on Windows 8.1 and above.<br> 
+					Firstly disable option "Enable Enhanced Protected Mode" in Internet Explorer 
+					<b>(IE-&gt;Tools-&gt;Internet Options-&gt;Advanced-&gt;Security)</b>. See <a href="screenshots/tb_win81_EPM_ext.jpg">picture</a>. 
+					<br>
+					<br>
+					Microsoft disables this option automatically in last Security Update for Internet Explorer.<br>
+					See here (<a href="https://technet.microsoft.com/en-us/security/bulletin/ms13-088">Microsoft Security Bulletin MS13-088</a>).<br>
+					<br>
+					If the problem is not solved check the Time Boss (Pro) version.
+					If you have version 3.08.XXX and below then upgrade Time Boss (Pro) to vesrion 3.09 and above please.
+					How to upgrade is <a href="#13">here</a>.
+					</p>
+				</div>
+			</li>
+			<li class='item' id='20151102A'>
+				<div class='q'>
+					I already use NetNanny 6.5 (their older version that still allowsme to manage the kid's NetNanny like local program's that use networktraffic access settings remotely via the internet). Can I disable theinternet protection module of Time Boss Pro? I want to use Time Boss tocontrol Windows login access time windows, durations, programs that involvenetwork traffic, ect.?
+				</div>
+				<div class='a'>
+					<p>Please uncheck the option <b>Enable</b> on the panel <b>Options-&gt;Internet monitor-&gt;Internet monitor</b> and restart the PC.
+					In this case TB internet monitor will be disabled  totally.
+					</p>
+				</div>
+			</li>
+		</ol>
+		<div class="headline">
+			How to limit games (programs, folders)
+		</div>
+		<ol>
+			<li class='item' id='35'>
+				<div class='q'>
+					How can I limit the time that a concrete program works? 
+				</div>
+				<div class='a'>
+					<p>Please, open <b>Black and white lists of programs</b> page. Then <a href="screenshots/tb_program_bwl.jpg">add needed program</a> or program folder. Push the button <b>Program time limit </b> and set the time limits. </p>
+					<p>You can  edit names of programs and folders on the panel <b>Black list</b>.<br>
+					You can have short names of programs (without full path) in <b>Black list</b>. So all programs with the same names will be restricted, without folder dependence.</p>
+				</div>
+			</li>
+			<li class='item' id='160714'>
+				<div class='q'>
+					How to get grants for games from Black or white lists in kid's session?
+				</div>
+				<div class='a'>
+					<p>Please activate the option - <b>Show Black and white lists in Sub. session</b> <br>
+					(TB-&gt;Control panel-&gt;Options-&gt;General-&gt;Miscellaneous).<br><br>
+					In this case kid can see programs from <b>Black and white list</b> and can use grant for any of programs (button with Clock at right).
+					</p>
+				</div>
+			</li>
+			<li class='item' id='160329'>
+				<div class='q'>
+					I was wondering if there is an easy to way to do a report of all of the applications used that counted against the user on a particular day? 
+					For example, it would be good to be able to say/see, you had 2 hours of usage and you used 90 minutes on Minecraft and the other 30 minutes on League of Legends.
+				</div>
+				<div class='a'>
+					<p>
+					There are two ways.<br><br>
+					1. You can use the diagram of day in the event log (the check box at the left bottom corner).
+					The hint of each program contains the info about total used time.<br><br>
+					2. You can use the page <b>Statistics</b> in the event log. Please select the type of statistics:
+					<b>Text</b> and  <b>program stat(istics)</b>.
+					</p>
+				</div>
+			</li>
+			<li class='item' id='35A'>
+				<div class='q'>
+					How can I block java games?
+				</div>
+				<div class='a'>
+					<p>Java games use javaw.exe or java.exe files. <br>
+					So you should block or limit this files - javaw.exe and java.exe.
+					<br>
+					<br>
+					We recommend to add the short files names: javaw.exe and java.exe manually (TB-&gt;Control panel-&gt;Black white list-&gt;Add program-&gt;
+					Any programs-&gt;Add program manually) without full path (c:\Program files...). <br>
+					Then give needed time limitation for this files.<br><br> If that do not take effect then
+					activate the option <b>Sys.programs</b> on the Event log panel for needed user in TB Control panel.<br>
+					In this case you will see the real used exe file (java) when game is active in the event log.
+					</p>
+				</div>
+			</li>
+			<li class='item' id='20171202'>
+				<div class='q'>
+					How can I block Minecraft game?
+				</div>
+				<div class='a'>
+					<p>The new version of Minecraft game uses Minecraft.Windows.exe file. <br>
+					The old version of Minecraft game is java game and uses file javaw.exe (or java.exe).<br>
+					So you should block or limit this files - Minecraft.Windows.exe or javaw.exe (or java.exe).
+					<br>
+					<br>
+					We recommend to add the short file name: Minecraft.Windows.exe (or javaw.exe or java.exe) manually (TB-&gt;Control panel-&gt;Black white list-&gt;Add program-&gt;
+					Any programs-&gt;Add program manually) without full path (c:\Program files...). <br>
+					Then give needed time limitation for this file(s).<br><br> 
+					</p>
+				</div>
+			</li>
+			<li class='item' id='35B'>
+				<div class='q'>
+					How can I block online games e.g. Runeescape?
+				</div>
+				<div class='a'>
+					<p>The game like Runeescape uses the client program on kids PC - JagexLauncher.exe.
+					<br>
+					<br>
+					So you can add this program to Time Boss programs Black/White list  and set for this program needed time limitation.
+					(Open TB Contol panel  -&gt; kids Black/White list panel -&gt; press Add program button at right - &gt;
+					Select this program  - JagexLauncher.exe - on the panel "From Windows start menu")
+					<br>
+					<br>
+					See<a href="screenshots/tb_online_games.jpg"> picture</a>.
+					</p>
+				</div>
+			</li>
+			<li class='item' id='150211'>
+				<div class='q'>
+					How can I block Steam games?
+				</div>
+				<div class='a'>
+					<p>Usually it is necessary to add to the Black list the file steam.exe (Steam Client Bootstrapper)
+					from folder C:\Program Files\Steam or from folder C:\Program Files (x86)\Steam.<br><br>
+					But sometimes that's not enough, the fact that this file run sometimes only a few seconds before the game, 
+					then it can stop and get control to the game.<br><br>
+					Therefore, if necessary, add to the Black list needed "steam" games. 
+					Usually they are in the folder C:\Program Files\Steam\steamapps\common.
+					The easy way to do that - to add this games to the Black list from the Event log: 
+					open the Event log of the child for the day, select needed executable files of games, click right Mouse button
+					and choose <b>Add to Black list</b>.<br><br>
+					You can set needed time limitation for games in the Black list.
+					In this case disable or delete the file steam.exe (Steam Client Bootstrapper) from the Black list
+					</p>
+				</div>
+			</li>
+			<li class='item' id='20171008'>
+				<div class='q'>
+					How can I block old Roblox games?
+				</div>
+				<div class='a'>
+					<p>The website "roblox.com" is needed for starting of games only.<br>
+					The main part on Roblox games is the file <b>RobloxPlayerBeta.exe</b> on Windows 10.<br>
+					So you should add it to <b>B/W list of programs</b> and get it needed time limitation.<br>
+					When this game is active you can add this file to <b>B/W list of programs</b> in TB using
+					<b>Currently running</b> panel in <b>Select programs</b> dialog.<br>
+					<br>
+					If you have several versions of Roblox apps installed on PC, so add the Roblox folder (by default it is "C:\Users\YOUR_KID_USERNAME\AppData\Local\Roblox") 
+					to <b>B/W list of programs</b> and get it needed time limitation.
+					</p>
+				</div>
+			</li>
+			<li class='item' id='20171211'>
+				<div class='q'>
+					How can I block BlueStacks games?
+				</div>
+				<div class='a'>
+					<p>Usually it is necessary to add to the <b>Black list of program</b> the folders with BlueStacks engine.
+					By default the folders are C:\ProgramData\Bluestacks and(or) C:\Program Files (x86)\Bluestacks.<br>
+					<br>
+					Also you can add this games to the Black list from the <b>Event log</b>: 
+					open the Event log of the child for the day, select BlueStacks engine exe file 
+					(C:\ProgramData\Bluestacks\Client\BlueStacks.exe or C:\Program Files (x86)\Bluestacks\HD-Frontend.exe),
+					click right Mouse button and choose <b>Add to Black list</b>.<br>
+					<br>
+					You can set needed time limitation for games in the Black list.
+					In this case disable or delete the folders with BlueStacks engine from the Black list		  </p>
+				</div>
+			</li>
+			<li class='item' id='121213B'>
+				<div class='q'>
+					How can I block old DOS games?
+				</div>
+				<div class='a'>
+					<p>Old DOS games use the program ntvdm.exe in  Windows 7 (8).<br><br>
+					So you can add this program С:/Windows/System32/ntvdm.exe <br>
+					to Time Boss programs Black/White list and set for this program needed time limitation.
+					</p>
+				</div>
+			</li>
+			<li class='item' id='140218A'>
+				<div class='q'>
+					How to limit online browsers games, e.g. Legend: Legacy of the Dragons?
+				</div>
+				<div class='a'>
+					<p>This game is browsers game.<br>So you should add the internet site of this game to 
+					<b>Black and white lists of internet sites</b> and limit it by time (button with clock at right).<br>
+					<br>
+					If you use Time Boss version &lt;3.15 then additionally activate the option <b>Allow only Internet Explorer using</b> on the panel <b>Internet filter</b>. 
+					This prevent to use all browsers except Internet Explorer.<br>
+					<br>
+					If you want to time limit the game "Legend: Legacy of the Dragons" so add the internet site *.warofdragons.com to 
+					<b>Black and white lists of internet sites</b> and limit it by time.
+					</p>
+				</div>
+			</li>
+			<li class='item' id='170807'>
+				<div class='q'>
+					How to add all Windows Metro Applications to a group?
+				</div>
+				<div class='a'>
+					<p>Please open the Time Boss Event log after using any of Windows Metro applications and check the folder that use this applications -
+					C:\Program Files\MetroApps by default.<br>
+					Add this folder to needed group. 
+					</p>
+				</div>
+			</li>
+			<li class='item' id='36'>
+				<div class='q'>
+					How the user with Subordinate rights can view the remaining time for a program from a black list? 
+				</div>
+				<div class='a'>
+					<p>The user can see this data from popup menu on Time Boss icon in system tray. Menu <b>My time limit </b> -&gt; 
+					<b>Black and white lists of programs</b> -&gt; column <b>Last remaining time</b>.<br>
+					<br>
+					Please check the option<b> Show black and white lists in Sub.session</b> on panel <b>Options-&gt;General</b><b>-&gt;Miscellaneous</b> </p>
+				</div>
+			</li>
+			<li class='item' id='49'>
+				<div class='q'>
+					I have just installed the trial version of Time Boss.<br> 
+					The children are reporting that some games (such as Harry Potter) are aborted when Time Boss displays the 5 minute warning. <br>
+					Thus they are unable to save and exit properly. Is there a way around this?
+				</div>
+				<div class='a'>
+					<p>When the warning appears, Windows switch from the game to the warning window. <br>
+					<br>
+					Kid can use Alt+Tab to return to the game.
+					<br>
+					<br>
+					To prevent this issue you can use warning only as sound (Miscellaneous-&gt;Warning-&gt;System beep).<br>
+					<br>
+					This sound will be played directly in the game.</p>
+				</div>
+				</div>
+			</li>
+			<li class='item' id='50'>
+				<div class='q'>
+					I would like to purchase that program, but first I wonder if it is possible to set a limit for a set of programs as a whole. 
+					It doesn't make any sense to limit amount of time allotted to a single program if kid can play another one.
+					Is it possible to create a time pool/schedule and associate programs with this pool/schedule?
+				</div>
+				<div class='a'>
+					<p>
+					Yes, it is possible.
+					<br>
+					<br>
+					Open panel Program White and Black list for needed user.
+					<br>
+					Add a new group (button Add group at right).
+					<br>
+					Add needed games or a whole folder with games to this group.
+					<br>
+					Set the time limitation for this group (button Time limitation at right).
+					<br>
+					<br>
+					So all programs from this group and all program from folders in this group
+					will be limited with one time restriction 
+					(for example, kid can play any games from the defined group for 2 hours of total time).</p>
+				</div>
+			</li>
+			<li class='item' id='53'>
+				<div class='q'>
+					How do I block the DOS COMMAND LINE (CMD.exe) and RUNAS.exe?
+				</div>
+				<div class='a'>
+					<p>Please set <b>Disable Run from Start menu</b> option in TB <b>Control panel-&gt;System protection</b> for your kid (since ver 2.491). Or add this programs in Black list. </p>
+				</div>
+			</li>
+			<li class='item' id='31'>
+				<div class='q'>
+					How can I hide my folders (with files and subfolders)? 
+				</div>
+				<div class='a'>
+					<p>Please select needed user who shouldn't be allowed to see the content of your folders. Open the <b>System protection </b> panel and add needed folders to <b>Folders protection </b> table. </p>
+				</div>
+			</li>
+			<li class='item' id='20151102'>
+				<div class='q'>
+					On my kid's PC, clicking Start Menu (Windows 10) doesn't work. 
+					The Windows 10 start menu appears for a few seconds, then disappears.
+				</div>
+				<div class='a'>
+					<p>If you use the <b>White list of programs</b> (<b>TB-&gt;Control panel-&gt;Kid-&gt;Black and white lists</b>)
+					then add the folder "C:\Windows" to this list (<b>Add folder</b> button at the right) 
+					and reopen the Windows session. </p>
+				</div>
+			</li>
+		</ol>
+
+		<div class="headline">
+			Event log, screenshots and statistics
+		</div>
+
+		<ol>
+			<li class='item' id='21'>
+				<div class='q'>
+					Where can I view screenshots? 
+				</div>
+				<div class='a'>
+					<p>Please open the page <b>Screenshots </b> in <b>Event Log</b>. </p>
+				</div>
+			</li>
+			<li class='item' id='21A'>
+				<div class='q'>
+					How to receive screenshots and event log on my email automatically?
+				</div>
+				<div class='a'>
+					<p>Please open the page <b>Mail notification</b> in <b>Options</b> window.</p>
+					Please input the recipients email address (or list of addresses separated by semicolons) in <b>TO</b> field on panel <b>Recipient</b>.
+					<br>
+					<br>
+					A list of e-mail addresses that receive a carbon copy (CC) you can define in box CC.
+					<br>
+					<br>
+					On panel Mail server (SMTP) settings specify the settings of your email server.
+					<br>
+					<br>
+					You can use а public email server (e.g. if you have account on yahoo.com, please use smtp.mail.yahoo.com) or email server in your internal network (e.g. mail.office.lan).<br>
+					<br>
+					More information about public email servers (SMTP) is on internet sites of these servers.
+					<br>
+					<br>
+					If you want to send screenshots from this PC - activate the check box <b>Enable</b> on panel <b>Send screenshots</b>.
+					<br>
+					<br>
+					If you want to send the event log from this PC - activate the check box<b> Enable</b> on panel <b>Send event log</b>.
+					<br>
+					<br>
+					If the Screenshot option is not active for some users, screenshots will not be sent.
+					<br>
+					<br>
+					<br>
+					E.g. you want to receive screenshots and event log to your email address 'mike@yahoo.com', so see this image:
+					<p align='center'><img src='pics/tb_email_587_yahoo.jpg' width='561' height='526'></p>
+					<br>
+					<p>
+					If email is not sent - check installed antivirus and firewall please.<br><br>
+					Attention! The computer name should be in English letters only!
+					How to change computer name is <a href='http://windows.microsoft.com/en-us/windows/change-computer-name#1TC=windows-7'>here</a>.
+					</p>
+					<p>Your password is needed to send email using your email server (SMTP) only.<br>
+					Create a new account on Gmail and use it if needed.</p>
+				</div>
+			</li>
+			<li class='item' id='21B'>
+				<div class='q'>
+					How to send screenshots to Gmail (or other email)?
+				</div>
+				<div class='a'>
+					<p>Please try to send screenshots using the Google email service (www.gmail.com).<br>
+					So create new Google email (or use an existing) and set TB settings as <a href='screenshots/tb_email_587_google.jpg'>here</a><br>
+					<br>
+					You can try to send screenshots using the Yahoo email service too.<br> So create new Yahoo email and set TB settings as <a href='screenshots/tb_email_587_yahoo_google.jpg'>here</a>          <br>
+					<br>
+					Then set in TO: field your real Gmail (or other email) address.<br>
+					<br>
+					If you use the smtp.gmail.com and receive the error messaage '
+					The SMTP server requires a secure connection or the client was not authenticated. 
+					The server response was: 5.5.1 Authentication Required' then enable 'Less Secure Sign-In' in your google account. After sign into google account, 
+					go to: <a href='https://www.google.com/settings/security/lesssecureapps'>https://www.google.com/settings/security/lesssecureapps</a></p>
+				</div>
+			</li>
+			<li class='item' id='21C'>
+				<div class='q'>
+					How to disable the taking of screenshots?
+				</div>
+				<div class='a'>
+					<p>Please open Time Boss <b>Control panel</b>, select needed user and disable option  <b>Screenshots</b> in <b>Event log</b> group.
+				</p>
+				</div>
+			</li>
+			<li class='item' id='150325'>
+				<div class='q'>
+					Screenshots do not saved in kids session. Why?
+				</div>
+				<div class='a'>
+					<p>May be the Windows TEMP folder is full. Please delete all files from it.<br><br>
+					By default TEMP folder is:<br>
+					C:\Users\Kid\AppData\Local\Temp.<br>
+					Select all files and folder from this folder and press <b>Delete</b>.
+					If Windows can not delete some files  - skip them.<br><br>
+					This folder can be hidden in Windows.
+					In this case <br>
+					1. Open Explorer (<b>Start-&gt;All programs-&gt;Accessories-&gt;Windows Explorer</b>)<br>
+					2. Open menu item <b>Menu-&gt;Organize-&gt;Folder and search options</b><br>
+					3. Open panel <b>View</b>, set <b>Show hidden files</b> in <b>Advanced settings</b> list<br>
+					After deleting set 'hidden' option back.
+					</p>
+				</div>
+			</li>
+			<li class='item' id='21D'>
+				<div class='q'>
+					Sometimes when I check the screen captures, they are black. Why?
+				</div>
+				<div class='a'>
+					<p>Some games (media players) has internal protection to avoid taken screenshots. In this case screenshots will be black...
+				</p>
+				</div>
+			</li>
+			<li class='item' id='22'>
+				<div class='q'>
+					Where can I view statistics? 
+				</div>
+				<div class='a'>
+					<p>Please open the page <b>Statists </b> in <b>Event Log</b>. </p>
+					<p>The <b>Statistics </b> is based on <b>Event log</b>. If the <b>Event log </b> is clear - the <b>Statistics </b> will be clear to. </p>
+				</div>
+			</li>
+			<li class='item' id='23'>
+				<div class='q'>
+					Where can I view summary time statistics for day, week, month? 
+				</div>
+				<div class='a'>
+					<p>Please open the page <b>Total statists </b> in <b>Event Log</b>. </p>
+					<p>The <b>Total statistics </b> is based on <b>Event log</b>. If the <b>Event log </b> is clear - the <b>Total statistics </b> will be clear to. </p>
+				</div>
+			</li>
+			<li class='item' id='23A'>
+				<div class='q'>
+					Are there statistics which sum the full work time with any selected program during a day?
+				</div>
+				<div class='a'>
+					<p>Yes, of course. Please open <b>Event log</b>-&gt;panel <b>Statistics</b> and check options
+					<b>Text</b> and <b>Programs stat.</b> at right.</p>
+				</div>
+			</li>
+			<li class='item' id='24'>
+				<div class='q'>
+					Why I view incorrect summary time on statistics page? 
+				</div>
+				<div class='a'>
+					<p>It seems that this user (kid) changed the Windows system time during work on PC or abnormality shutdown PC. You can check that in <b>Event Log</b>. </p>
+				</div>
+			</li>
+			<li class='item' id='46'>
+				<div class='q'>
+					Can I see statistics for a  previous month?
+				</div>
+				<div class='a'>
+					<p>If you want the program to log events (and save statistics) more than one month, then increase the number of days for event log saving  (TB-&gt;Control panel-&gt;Options-&gt;Log file-&gt;Save messages in log last ... days).</p>
+				</div>
+			</li>
+			<li class='item' id='46A'>
+				<div class='q'>
+					Why is it that my “Save messages in log lasts 30 days”, but the Event History only shows 6 or 7 days? Can I view the 30 day logs some other way?
+				</div>
+				<div class='a'>
+					<p>Please, open TB Event log window and select item 'Event log' on left panel.<br>
+					On right panel on top clear 'User','From date' and 'To date' text boxes and click button 'Refresh'.<br>
+					So you can see all events in your log.<br><br>
+					All events are in the simple text file time_boss.log (it is read-only). You can open this file with Notepad.<br>
+					<br>
+					30 days is default length for the Event log.<br>
+					You can change this setting here: TB Control panel-&gt;Options window-&gt;Log file panel.
+					</p>
+				</div>
+			</li>
+			<li class='item' id='46B'>
+				<div class='q'>
+					How to reset time statistics?
+				</div>
+				<div class='a'>
+					<p>If you delete all messages from event log (TB-&gt;Control panel-&gt;Options-&gt;Event log-&gt;Clear all) - all statistics will be lost.</p>
+				</div>
+			</li>
+			<li class='item' id='26'>
+				<div class='q'>
+					How can I save data from Event log or Statistics pages? 
+				</div>
+				<div class='a'>
+					<p>Select the needed data and copy it (Crtl+C). Open any text editor (Notepad, MS Word, MS Excel...) and paste data (Ctrl-V). Save the file. </p>
+				</div>
+			</li>
+			<li class='item' id='29'>
+				<div class='q'>
+					How to copy data from Event log or Statistics pages? 
+				</div>
+				<div class='a'>
+					<p>Select needed lines using Ctrl, Shift button and Mouse. Push Ctrl-C (Ctrl-Insert). </p>
+					<p>If the pasted text contains the wrong chars then switch the language to national language in Time Boss before copying. </p>
+				</div>
+			</li>
+			<li class='item' id='30'>
+				<div class='q'>
+					Why Notepad and others systems programs are absent in Event log? 
+				</div>
+				<div class='a'>
+					<p>Time Boss doesn't trace the programs from Windows system folders (Notepad is a system program) if toggle <b>Log sys. programs </b> in <b>Log panel </b> is disabled (by default). </p>
+				</div>
+			</li>
+			<li class='item' id='27'>
+				<div class='q'>
+					How to save screenshot to my file? 
+				</div>
+				<div class='a'>
+					<p>Select the needed screenshot and press right button of mouse on picture - the <b>Save Picture ... </b> popup menu will be opened, or use button <b>Save as file</b>. </p>
+				</div>
+			</li>
+			<li class='item' id='140418D'>
+				<div class='q'>
+					How can I see screenshots of the second monitor?
+				</div>
+				<div class='a'>
+					<p>You can see screenshots of the second monitor in the same screenshots log. This screenshots have the time by one minute longer than screenshots of the first monitor.<br>
+				</p>
+				</div>
+			</li>
+			<li class='item' id='28'>
+				<div class='q'>
+					Where located the screenshots files? 
+				</div>
+				<div class='a'>
+					<p>The folder Screenshots contains the folders with screenshots files. The everyday has the folder with name like '01-01-2005'. </p>
+					<p>Each
+					screenshots is the JPG image file with name like '14-30-34.jpg'. The
+					size of file is about 150KB for the screen with resolution 1280*1024
+					(32b colors). So the folder for one day can has size about 10MB... The
+					program automatically delete old screenshots, please see Screenshots
+					panel in <b>Options. </b></p>
+					<p>You can manually delete don't needed or old screenshots files. </p>
+				</div>
+					<ol type='a'>
+						<li class='item' id='28a'>
+							<div class='q'>
+								How to protect screenshots files?  
+							</div>
+							<div class='a'>
+								<p> You can add the folder with screenshots (\Time Boss\Screenshots) to table <b>Folder protection</b> on the panel <b>System protection</b>.<br>
+								<br>
+								Press button<b> Disable</b> on pane <b>Protection</b> (Options window) for access to screenshots folder for  Boss users.</p>
+							</div>
+						</li>
+					</ol>
+				</div>
+			</li>
+			<li class='item' id='32'>
+				<div class='q'>
+					Where user with Subordinate rights can view his time-table and statistics? 
+				</div>
+				<div class='a'>
+					<p>The user can see this data from popup menu on Time Boss icon in system tray. Menu-&gt;My time limitation.</p>
+				</div>
+			</li>
+			<li class='item' id='39'>
+				<div class='q'>
+					How to use Backup Folder for screen shots? 
+				</div>
+				<div class='a'>
+					<p>If you define a folder, the program will write screenshots to this folder as well. </p>
+					<p>This
+					will allow you to view on the one (parental) computer all screenshots
+					that are taken on the other PCs. Of course you 'll have to install TB
+					on all computers you are using.. </p>
+					<p>To do it, you have </p>
+					<p>1. To give full access (make share) to the screenshot folder on the parental PC (Time Boss/Screenshots) for other computers. </p>
+					<p>2. Then to choose this folder as a Backup folder on the other computers. </p>
+				</div>
+			</li>
+			<li class='item' id='170728'>
+				<div class='q'>
+					I'd like to save screenshots to a different folder/drive than the one used by TimeBoss; is that possible?
+				</div>
+				<div class='a'>
+					<p>Yes.<br>Open <b>Time Boss-&gt;Control panel-&gt;Options-&gt;General</b> panel and select options <b>Backup</b> and <b>Screenshots only to backup</b>. Select needed folder. See <a href='screenshots/tb-parental-control-ssfolder.png'>here</a>.<br> Please note, this folder will be not protected by TB, you can not see screenshots from Time Boss Event log window.
+					</p>
+				</div>
+			</li>
+			<li class='item' id='170729'>
+				<div class='q'>
+					If I uninstall TimeBoss from c: drive and then reinstall on a different drive (eg. e:), will the screenshots save to the e: drive?
+				</div>
+				<div class='a'>
+					<p>Yes.<br>Time Boss saves all screenshots in folder Screenshots in Time Boss folder by default. This folder will be protected by TB. You can see this screenshots in the Time Boss Event log window.
+					</p>
+				</div> 
+			</li>
+		</ol>
+
+		<div class="headline">
+			Time Boss protection, anti-virus settings
+		</div>
+
+		<ol>
+			<li class='item' id='9'>
+				<div class='q'>
+					&nbsp;Can I stop Time Boss? 
+				</div>
+				<div class='a'>
+					<p>You should open <b>Options </b>and push the button <b>Prepare for uninstall</b>. The Time Boss will be stopped. But after restart of PC Time Boss will run again.</p>
+				</div>
+			</li>
+			<li class='item' id='10'>
+				<div class='q'>
+					The users with Subordinate rights can stop time_boss.exe from Taskmanager, is it normal?  
+				</div>
+				<div class='a'>
+					<p>The
+					all limitations functions are provided by the service time_boss_s.exe.
+					It is protected and nobody can stop it (except users with Boss rights).
+					The time_boss.exe is only small part of Time Boss which indicates
+					remaining time for Subordinate users. So, users can stop time_boss.exe
+					with no expected effect.</p>
+				</div>
+			</li>
+			<li class='item' id='1OA'>
+				<div class='q'>
+					&nbsp;How secure is Time Boss?
+				</div>
+				<div class='a'>
+					<p>Time Boss uses the official protections service of Windows system.
+					<br>
+					<br>
+					Time Boss has internal protection against:
+					uninstalling,
+					time changing by kind,
+					process killers programs,
+					removing in Windows Safe mode
+					and others.
+					<br>
+					<br>
+					You can use Time Boss  in case if kind has administrators' rights in Windows too.
+					<br>
+					<br>
+					Time Boss doesn't create espionage modules masking in components of Windows.<br>
+					Time Boss doesn't litter system folders, register, doesn't reduce the working speed of other programs.
+					</p>
+				</div>
+			</li>
+			<li class='item' id='37'>
+				<div class='q'>
+					Is it possible to prevent Time Boss from deinstalling (or deleting its components) in Safe Mode? 
+				</div>
+				<div class='a'>
+					<p>Yes, it is. </p>
+					<p>Please use this option <b>TB-&gt;Control panel-&gt;Options-&gt;General-&gt;Protection-&gt;Protect in Safe Mode</b>.</p>
+					<!--
+					<p>Since version 3.16 Time Boss can work in Windows Safe Mode 
+					<b>(TB->Control panel->Option->General->Protection->Run in Safe Mode)</b>.</p>
+					-->
+					<p>In old versions please open <b>TB-&gt;Control panel-&gt;Options</b> Safe Mode Protect  and push <b>Enable</b>. Setting the protection can take few minutes. </p>
+					<p>Notice, that the user with Administrator rights has a possibility to remove the protection. 
+					</p>
+					<p>If the <b>Safe Mode protection</b> is active, the program can be stopped after installation of the new "big" Windows 10 updates (Microsoft releases the "big" update once per year usally. 
+					E.g. Windows 10 version 1511 build 10586 November 2015 update or 1607 August 2016). The "big" Windows 10 update can not reinstall it correctly and stops it.<br>
+					In this case uninstall the program before Windows 10 update and install the program (you can download the setup file from our site) 
+					again in the old folder. <br>
+					All Time Boss (Pro) settings, screenshots and logs will be saved. If the program was not uninstalled before Windows 10 update
+					and the program do not work after Windows 10 update then uninstall the program using the Windows uninstalling wizard and 
+					install the program (you can download the setup file from our site) again in the old folder. </p>
+					<p>Please email us to us if any problem appears. We will help.</p>
+				</div>
+			</li>
+			<li class='item' id='170626'>
+				<div class='q'>
+					Is it possible to use Time Boss (Pro) in Safe Mode?
+				</div>
+				<div class='a'>
+					<p>May be the best way is to forrbid the Safe Mode for users. You can google how to do that.<br> 
+					<br>
+					We do not recommend to use Time Boss in Safe Mode.<br>Your antivirus will block Time Boss.      
+					<br>
+					<br>
+					But Time Boss (Pro) can work in Safe Mode.<br>
+					At first add Time Boss folder to list of trusted folder in your antivirus if needed.<br>
+					Then download <a href="download/start-time-boss-in-safe-mode.txt">this simple text file</a> (or copy the content from it to any empty text file) 
+					and change the file extention of this file from 'txt' to 'reg', then start (dbl-click) it.
+					The Administrator rights will be needed.<br>
+					<br>
+					This file adds to Windows register two keys needed to start Time Boss (Pro) in Safe Mode. You should delete this keys manually if needed.
+					</p>
+				</div>
+			</li>
+			<li class='item' id='15A'>
+				<div class='q'>
+					Is there a way to block access to the Time Boss Screenshots windows folder?
+				</div>
+				<div class='a'>
+					<p>Time Boss Screenshots and Logs folders are protected in kids session.
+					<br>
+					<br>
+					If kid try to open this folders (directly, or by typing Url in Explorer) 
+					appears 'Access is denied' message.
+					<br>
+					<br>
+					The main TB folder is not protected by default. It is only hidden in Explorer.
+					<br>
+					But all important files are protected in main TB folder. So kid can not delete or rename this files.
+					<br>
+					<br>
+					You can put the main TB folder in  <b>Protected folders</b>  list  (TB-<b>Control panel-Kid-System protection</b>) for kid.
+					<br>
+					But in this case TB indication window can be not opened by kid (from Window menu), with remainig time willbe all OK.
+					<br>
+					<br>
+					Screenshots and events will be saved in any case.
+					You can put any folders in <b>Protected folders</b> list for kid
+					and try open it in kids session (after logoff-login).
+					</p>
+				</div>
+			</li>
+			<li class='item' id='25'>
+				<div class='q'>
+					My kid change system time on PC. How can I forbid that? 
+				</div>
+				<div class='a'>
+					<p>Please open the panel <b>System protection </b> for this user and check options "Protect system Date and Time". These options need LogOn/LogOff to take effect. </p>
+				</div>
+			</li>
+			<li class='item' id='140418C'>
+				<div class='q'>
+					My son changes PC time in BIOS, what can I do?
+				</div>
+				<div class='a'>
+					<p>You can set the password on BIOS.<br>
+					Additionally you can activate the option <b>Synchronize time in Sub. session with time server</b> 
+					on panel <b>TB-&gt;Control panel-&gt;Options-&gt;General-&gt;Miscellaneous</b>.
+					</p>
+				</div>
+			</li>
+			<li class='item' id='121213A'>
+				<div class='q'>
+					Sysinternal Process Explorer can stop Time Boss?
+				</div>
+				<div class='a'>
+					<p>Time Boss stops Sysinternal Process Explorer in Subordinate sessions.<br>
+					You can add any "bad" program in <b>Black list</b> for kid if needed.</p>
+				</div>
+			</li>
+			<li class='item' id='37A'>
+				<div class='q'>
+					Can my anti-virus program stop Time Boss (Pro)?
+				</div>
+				<div class='a'>
+					<p>Most popular anti-viruses (except Avast!) are compatible with Time Boss (Pro)
+					and you can use Time Boss (Pro) without problems.<br>
+					<br>
+					But if TB does not work and you use anti-virus program,
+					please add Time Boss (Pro) modules (<b>time_boss.exe, time_boss_s.exe, time_boss_m.mik</b>)
+					in the list of trusted programs (if it exists) in your anti-virus program.</p>
+					<p>If you use Kaspersky Anti-Virus in "hard" mode
+					then open the window "Trusted zone" in it 
+					(Kaspersky -&gt; Settings -&gt; Advanced Settings -&gt; Threats and Exclusions -&gt; button "Settings" on Exclusions panel) and
+					add the folder with Time Boss to the list "Exclusions rules".<br>
+					<br>
+					Please see the <a href="screenshots/kaspersky_trusted.jpg">picture</a>.
+					</p>
+				</div>
+			</li>
+			<li class='item' id='37AA'>
+				<div class='q'>
+					Can "Avast!" or Norton Antiviruses stop Time Boss (Pro)?
+				</div>
+				<div class='a'>
+					<p>If you have the last version of <b>Norton</b> Antivirus then 
+					restore the file <b>time_boss_s.exe</b> from <b>Quarantine</b> if needed and restart the PC again. 
+					(Open Norton Security -&gt; Security -&gt; History -&gt; 
+					select item time_boss_s.exe (Sonar...) Quarantined -&gt; 
+					select 'Options' as Recommended Action -&gt; Select 'Restore &amp; exclude this file' -&gt; 
+					select 'Yes' in Quarantine Restore -&gt; Close Norton Security) <br>
+					<br>
+					If you have the last version of<b> Avast!</b> Antivirus then stop it
+					for a few minutes, 
+					install (repair) Time Boss, 
+					add files <b>time_boss_s.exe,
+					time_boss.exe</b> and <b>time_boss.mik</b> to the list of exclusions in Avast!
+					(Avast -&gt; Open Avast! user interface -&gt; Settings -&gt; Antivirus -&gt; Exclusions)
+					and start Avast! again.</p>
+					<p>By default Avast runs Time Boss modules in the "Sandbox". But Time Boss cannot work in this "Sandbox"...<br>
+					<br>
+					If you have installed <b>Avast!</b> Antivirus <b>ver. 9</b>, 
+					then open the window <b>Exclusions</b> in it (<b>Avast  User interface -&gt; Settings -&gt; 
+					Active Protection -&gt; File System Shield -&gt; Exclusions</b>) 
+					and add the folder where Time Boss installed (e.g. c:\Program Files\Time Boss) to the list of 
+					<b>Exclusions</b>, press OK and reboot the computer.<br>
+					<br>
+					Pease see the<a href="screenshots/tb_avast_09.jpg"> picture</a>.<br>
+					<br>
+					If you have installed <b>Avast!</b> Antivirus <b>ver. 8</b>, 
+					then open the window <b>Global Exclusions</b> in it (<b>Avast  User interface -&gt; Settings (at top-right) -&gt; Global Exclusions</b>) 
+					and add the folder where Time Boss installed (e.g. c:\Program Files\Time Boss) to the list of 
+					<b>Exclusions</b>, then reboot the computer.<br>
+					<br>
+					Pease see the<a href="screenshots/tb_avast_exclude_en.jpg"> picture</a>.<br>
+					<br>
+					If you have installed <b>Avast!</b> Antivirus <b>ver. 7 </b>,please open the window <b>AutoSandbox</b> in Avast (<b>Avast -&gt; Real-Time Shields -&gt; File System Shield -&gt; 
+					Expert Settings -&gt; Exclusions</b>) and add the folder where Time Boss installed (e.g. c:\Program Files\Time Boss\*) 
+					to the list of<b> Exclusions</b>, then reboot the computer.          
+					</p><p>Pease see the<a href="screenshots/avast_sandbox_exc.jpg"> picture</a>.</p>
+					If this does not work, then an additional open the window <b>AutoSandbox</b> in Avast (<b>Avast -&gt; Real-Time Shields -&gt; File System Shield -&gt; Expert Settings -&gt; AutoSandbox</b>) and add files "time_boss_s.exe", "time_boss_m.mik", "time_boss.exe" (from Time Boss folder) to the list <b>Files that will be excluded from automatic sandboxing</b>, then reboot the computer.
+					<p>Pease see the<a href="screenshots/avast_sandbox.jpg"> picture</a>.</p>
+					If this does not work, then an additional open the window<b> Exclusions</b> in Avast 
+					<b>(Avast -&gt; Additional protection -&gt; Sandbox -&gt; Expert Settings -&gt; Exclusions</b>) and add the folder where Time Boss installed (e.g. c:\Program Files\Time Boss\*) 
+					to the list of <b>Exclusions</b>, then reboot the computer.
+					<p>Pease see the<a href="screenshots/avast_sandbox_main.jpg"> picture</a>. </p>
+				</div>
+			</li>
+			<li class='item' id='20171203A'>
+				<div class='q'>
+					My son stops TB using process blocker program. How can I fobidd that?
+				</div>
+				<div class='a'>
+					<p>You should add this process blocker program to <b>B/W list on programs</b> in TB.<br>
+					You can open the TB <b>Event log</b>, find the start event of this process blocker program
+					and using popup menu (Right Mouse click) add this process blocker program
+					to <b>B/W list on programs</b> for your son.
+					</p>
+				</div>
+			</li>
+			<li class='item' id='37B'>
+				<div class='q'>
+					Does not Log Off when time expired...
+					When the time reaches 1 minute, the icon in the system tray and the desktop notification both blink "1", but the computer never logs off...
+				</div>
+				<div class='a'>
+					<p>
+					Please check your AntiVirus program and add Time Boss modules
+					(<b>time_boss.exe, time_boss_s.exe, time_boss_e.dll, time_boss_m.mik</b>)
+					in the list of trusted programs in your AntiVirus program.
+					</p>
+				</div>
+			</li>
+			<li class='item' id='140513'>
+				<div class='q'>
+					I've noticed that sometimes my son is logged in and Time Boss will stop running. Rebooting will start it
+					up again, but could you consider running some type of agent that would restart it automatically, in cases where it exits
+					unexpectedly?
+				</div>
+				<div class='a'>
+					<p>The main part of Time Boss  (time_boss_s.exe) is the Windows service.<br>
+					It is hidden process and it restarts automatically himself.<br>
+					<br>
+					May be your son stops the user interface of this service - time_boss.exe?<br>
+					So it is "normal". Please see<a href="http://nicekit.com/tbfaq.htm#10"> here</a>.
+
+					<br>
+					<br>
+					May be your son uses special process killer program (you can see it in the TB event log) -
+					in this case add this programs to Black list in Time Boss.
+
+					Please see <a href="http://nicekit.com/tbfaq.htm#121213A">here</a>. <br>
+					<br>
+					May be your son changes PC time in BIOS...
+					Please see <a href="http://nicekit.com/tbfaq.htm#140418C">here.</a></p>
+				</div>
+			</li>
+			<li class='item' id='131212'>
+				<div class='q'>
+					My son has adminstartors rights in Windows and can change the Administrator's password. 
+					How can I forbid that?
+				</div>
+				<div class='a'>
+					<p>Please set the Subordinate rights for Someone and Administrator with zero time limit.<br>
+					In this case - Administrator and all new added users in Windows will be stopped.<br><br>
+					The Time Boss password for access to TB Control panel in this case 
+					(<b>Time Boss-&gt;Control panel-&gt;Options-&gt;Password</b>).<br>
+					With this password you can open Time Boss Control panel from any Windows user (in kids session too).<br>
+					Please notice, TB should have at least one user with Boss rights - so add the new ANY user (not defined in Windows)
+					in TB and set him Boss rights.
+					</p>
+				</div>
+			</li>
+			<li class='item' id='131227B'>
+				<div class='q'>
+					How to disable Windows command line (cmd.exe) for kid?
+				</div>
+				<div class='a'>
+					<p>Please activate option <b>Disable Run from Start Menu</b> on panel <b>Time Boss-&gt;Control panel-&gt;System protection</b> for kid.<br>
+					Or add the file C:\Windows\System32\cmd.exe in <b>Black list</b>.
+					</p>
+				</div>
+			</li>
+			<li class='item' id='131227C'>
+				<div class='q'>
+					How to disable Windows Microsoft Management Console (mmc.exe) for kid?
+				</div>
+				<div class='a'>
+					<p>Please add the file C:\Windows\System32\mmc.exe in <b>Black list</b>.</p>
+				</div>
+			</li>
+			<li class='item' id='140206'>
+				<div class='q'>
+					What can I do if kid uses a screen saver as a desktop background?
+				</div>
+				<div class='a'>
+					<p>Please open TB <b>Control panel-&gt;Options-&gt;General-&gt;Miscellaneous</b> and activate the option <b>Screen saver does not stop the timer</b>.
+					</p>
+				</div>
+			</li>
+			<li class='item' id='161109'>
+				<div class='q'>
+					What can I do if screen saver does not stop the timer?
+				</div>
+				<div class='a'>
+					<p>Please open TB <b>Control panel-&gt;Options-&gt;General-&gt;Miscellaneous</b> and disable the option <b>Screen saver does not stop the timer</b>.<br>
+					Plese check, may be the monitor dimms when screensaver is active. In this case activate the option <b>On resume, display logon screen</b> in Windows
+					<b>Mouse right click on Windows desktop-&gt;Personalize-&gt;Screen saver</b>.
+					</p>
+				</div>
+			</li>
+		</ol>
+
+		<div class="headline">
+			Additional Time Boss settings
+		</div>
+
+		<ol>
+			<li class='item' id='1D'>
+				<div class='q'>
+					&nbsp;Is password case sensitivity?
+				</div>
+				<div class='a'>
+					<p>No, password is not case sensitivity.</p>
+				</div>
+			</li>
+			<li class='item' id='20'>
+				<div class='q'>
+					What is "Stealth" mode? 
+				</div>
+				<div class='a'>
+					<p>The <b>"Stealth" mode </b> disables the icon of Time Boss in system tray (defined user wouldn't see Time Boss components). </p>
+				</div>
+			</li>
+			<li class='item' id='51B'>
+				<div class='q'>
+					How to hide Time Boss icon in system tray?
+				</div>
+				<div class='a'>
+					<p>Please activate <b>Stealth</b> mode for kid (<b>Time Boss-&gt;Control panel-&gt;Kid-&gt;Miscallaneous</b>)</p>
+				</div>
+			</li>
+			<li class='item' id='40'>
+				<div class='q'>
+					How to open Control panel if I selected Hide in Configuration menu?
+				</div>
+				<div class='a'>
+					<p>Please start Time Boss from windows menu (windows button Start-&gt;Programs-&gt;Time Boss-&gt;Time Boss) or run time_boss.exe from Time Boss folder.</p>
+				</div>
+			</li>
+			<li class='item' id='130927'>
+				<div class='q'>
+					How to disable this big numbers in the screen corner?
+				</div>
+				<div class='a'>
+					<p>Please use the check box "Stealth" mode (panel Miscellaneous-&gt;Extended) 
+					for disable big numbers at all.<br>
+					Additionally you can change the time in option <b>Show countdown window before ... mins</b>. </p>
+				</div>
+			</li>
+			<li class='item' id='13B'>
+				<div class='q'>
+					&nbsp;On what basis does Time Boss calculate the time a user is using a computer (e.g. internal clock, time server etc.)?
+				</div>
+				<div class='a'>
+					<p>Time Boss uses the local PC internal clock.<br>
+					<br>
+					Time Boss has the protection against time change and the automatically time synchronization (every in two minutes)
+					with Internet time server (<b>Control panel-&gt;Options-&gt;Synchronize time with time server:</b>) for Subordinate users.</p>
+				</div>
+			</li>
+			<li class='item' id='14AA'>
+				<div class='q'>
+					How the time per week is calculated and how the check boxes of weekend (Fr.Sa.So) work...
+				</div>
+				<div class='a'>
+					<p>Per week time limit set the total free time for all week days (Monday ... Sunday). Without
+					per day time limitation.<br>
+					<br>
+					Weekend check boxes (<b>Control panel-&gt;Options-&gt;Weekends</b>) used only if Per day time limit is active. <br>
+					<br>
+					In this case they get the possibility
+					to add additional time on each weekend automatically.</p>
+				</div>
+			</li>
+			<li class='item' id='140418E'>
+				<div class='q'>
+					Where kid can see the remaining time of week?
+				</div>
+				<div class='a'>
+					<p>Please see <a href="screenshots/tb_week_remaining_time.jpg">pic.1</a>, <a href="screenshots/tb_week_remaining_time_2.jpg">pic.2</a> and <a href="screenshots/tb_week_remaining_time_3.jpg">pic.3</a>. This feature was added since version 3.11.
+					</p>
+				</div>
+			</li>
+			<li class='item' id='14A'>
+				<div class='q'>
+					I just saw on screenshot we can put half time or 15 minutes in the time table. 
+					Is it only a Time Boss Pro feature or we can do that in Time Boss basic?
+				</div>
+				<div class='a'>
+					<p>It's basic feature since version 2.39. Please use Crtl+Mouse Click.</p>
+				</div>
+			</li>
+			<li class='item' id='52'>
+				<div class='q'>
+					When my Son goes on his account, it logs him right off again, even if he has time left.  I cannot see any settings that would affect this...
+				</div>
+				<div class='a'>
+					<p>May be you have activate TB <b>Forced breaks </b> option for your Son.
+					<br>
+					<br>
+					In this case TB prevent open next session of user if "Break time" (default 10 min) is not ended.<br>
+					<br>  
+					So simple disable this option (TB<b> Control panel -&gt; Computer time limitation</b> for your son -&gt; <b>Forced breaks</b> -&gt; uncheck Enable).</p>
+				</div>
+			</li>
+			<li class='item' id='140422'>
+				<div class='q'>
+					Is there any way to modify, personalize, or disable Windows Screen Saver?
+				</div>
+				<div class='a'>
+					<p>Time Boss (Pro) activates the Windows Screen Saver automatically 
+					(kid can start it directly from Time Boss), so you can not disable it at all.
+					<br>
+					But you can choose the 1000 minutes (or more) waiting time interval of Screen Saver, so this
+					Screen Saver will be not started automatically at all.
+					<br>
+					How to do that: press right Mouse button on the Windows desktop, select <b>Personalize-&gt;Screen Saver</b>
+					and in opened window select 1000 minutes as <b>Wait</b> interval.
+					</p>
+				</div>
+			</li>
+			<li class='item' id='170303B'>
+				<div class='q'>
+					How to stop TB counting down if mouse and keyboard are not used for, say, 5 minutes?
+				</div>
+				<div class='a'>
+					<p>You can use the Windows screen saver option to activate it after 5 mins pause in activity,
+					or you can activate the Windows "dim" display option, in both cases TB stops the timer.
+					</p>
+				</div>
+			</li>
+			<li class='item' id='170303C'>
+				<div class='q'>
+					Can you please tell me how to access the control panel or options button from a running TB on a windows 10 tablet?
+				</div>
+				<div class='a'>
+					<p>You should use the TB password to access to TB Control panel from kid's session.
+					There is the button at bottom left on the window with kid settings to launch TB Control panel.
+					</p>
+				</div>
+			</li>
+			<li class='item' id='151223'>
+				<div class='q'>
+					How to set the various time limit per each day of the week?
+				</div>
+				<div class='a'>
+					<p>This feature is active only for versions &gt;3.15.<br>
+					Please disable the option <b>per DAY</b> and click by mouse on the time limit per each day below.<br>
+					In the opened window you can set the needed time limitation. See <a href="screenshots/tb_time_limitation_tt.jpg">here</a>.
+					</p>
+				</div>
+			</li>
+		</ol>
 	</div>
 
 <? 
