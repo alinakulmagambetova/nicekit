@@ -1364,7 +1364,6 @@ include 'header.php';
 					<br>
 					This sound will be played directly in the game.</p>
 				</div>
-				</div>
 			</li>
 			<li class='item' id='50'>
 				<div class='q'>
@@ -1651,7 +1650,6 @@ include 'header.php';
 					program automatically delete old screenshots, please see Screenshots
 					panel in <b>Options. </b></p>
 					<p>You can manually delete don't needed or old screenshots files. </p>
-				</div>
 					<ol type='a'>
 						<li class='item' id='28a'>
 							<div class='q'>
