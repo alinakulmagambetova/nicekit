@@ -2181,6 +2181,406 @@ include 'header.php';
 				</div>
 			</li>
 		</ol>
+
+		<div class="headline">
+			<p align='center'><img src='pics/TBPro_name.gif'></p>
+		</div>
+
+		<div class="headline">
+			Time Boss Pro features
+		</div>
+
+				<ol>
+			<li class='item' id='p1'>
+				<div class='q'>
+					How to configure Time Boss Pro for using in your local network?
+				</div>
+				<div class='a'>
+					<p>
+					There is no necessity to adjust specially Time Boss Pro.<br>
+					There is no necessity to adjust any lan ports, IP addresses, firewalls and etc in your local network.</p>
+				</div>
+			</li>
+			<li class='item' id='p2' id='$1'>
+				<div class='q'>
+					How to connect to remote PC?
+				</div>
+				<div class='a'>
+					<p>You can connect only to remote PC where Time Boss Pro is installed. </p>
+					<p>If
+					the necessary PC is absent in menu "Network" then choose menu item
+					"Find remote computer". Press button "Refresh" and select
+					the computer that you need. You will connect to this PC and this PC
+					will be added to menu "Network". In future you would be able to connect
+					to this remote PC using this menu item. <br><br>
+					If you do not see kid's PC in the list so you can add it manually.
+					Press the button<b> Add computer manually</b> and input the name of kid's PC.
+					<br>
+					The right computer name of kid's PC you can see on kid's PC in the 
+					<b>Basic information about computer</b> window (Start-&gt;Control Panel-&gt;System and Security-&gt;System).
+					</p>
+					<p>If you have connected to remote PC you can see string "You are on remote PC!" in the caption of program.<br>
+					<br>
+					After connection you can make ALL changes you need on remote PC. These
+					changes will be saved on remote PC when you return to local PC (menu
+					item "Network-&gt;Return to this computer") or connect to another
+					remote PC or close program.<br>
+					<br>
+					<b>If you cannot connect to remote PC, please check:</b></p>
+					<p>1. Is TB Pro installed on remote PC and it works?</p>
+					<p>2. Can you see the name of remote PC in the window "Find remote computer" in TB Pro (Control panel-&gt;Menu-&gt;Network-&gt;Find remote computer)?<br>
+					Please check, you should see the kid's PC in Windows Network window (Explorer-&gt;Network).
+					If you can't see here other computers so read <a href="http://www.tenforums.com/network-sharing/7386-cant-see-other-computers-workgroup-windows-10-computer.html">here</a>.
+					</p>
+					<p>3. The TCP port should be the same on remote PC (TB-&gt;Control panel-&gt;Options-&gt;Network-&gt;TCP port) and in Menu-&gt;Network-&gt;Remote computer name-&gt;Options on this PC.<br>
+					By default this TCP port is 18481.</p>
+					<p>4. If the computer uses Wi-Fi connection then activate option<b> Enable connection from internet </b>(TB Pro-&gt;Control panel-&gt;Options-&gt;Network-&gt;Connections options). Restart PC to take effect. Wi-Fi connection is the public connection.</p>
+					<p>5. Open Windows Firewall settings and verify that Time Boss Pro files (time_boss_s.exe, time_boss.exe) <br>
+					are in the list of allowed programs on remote PC and on this PC. Restart PC to take effect. </p>
+					<p>6. If with 1,2,3,4,5 are ok. Try to connect to remote PC from TB Pro (Menu-&gt;Network-&gt;Name of remote PC-&gt;Connect).</p>
+				</div>
+			</li>
+			<li class='item' id='140611'>
+				<div class='q'>
+					I want to put Time Boss Pro  on three computers - actually one will boss the other two.  
+					How do we do this with the one copy I have so far?
+				</div>
+				<div class='a'>
+					<p>
+					1. Please install TB Pro on all PC's.<br>
+					2. Input your registration name and key on each PC.<br>
+					3. Reboot all PC's.<br>
+					4. Set password in TB Pro on kid's PC's.<br>
+					5. Set needed time limitation on kid's PC: <a href="http://nicekit.com/parental-control/help/ch02s02.html">here</a>.
+					You can save-load TB Pro settings to-from files if needed: <a href="http://nicekit.com/tbfaq.htm#140127A">here</a>.<br>
+					6. Set zero time limit to Someone user: <a href="http://nicekit.com/parental-control/help/ch02s01.html">here</a>. <br>
+					7. Now kid's PC's is ready to work.<br>
+					8. Then open TB Pro on your PC and try to connect to kid's PC's: <a href="http://nicekit.com/tbfaq.htm#p2">here</a>.<br>
+					<br>
+					So you can control kid's PC's from your PC.		  
+					</p>
+				</div>
+			</li>
+			<li class='item' id='121213'>
+				<div class='q'>
+					Time Boss Pro uses a direct connection to the protected PC or over a website?
+				</div>
+				<div class='a'>
+					<p>Time Boss uses direct connection. Your data is not sent to our website. 
+					</p>
+				</div>
+			</li>
+			<li class='item' id='140418A'>
+					<div class='q'>
+				Is there any way to access this software over the Internet (so I could update/change settings from work)?
+				</div>
+				<div class='a'>
+					<p>Yes, see <a href="http://nicekit.com/tb_cloud.htm">Time Boss Cloud</a>, <br>
+					or 
+					<br>
+					you can direct connect to remote TB Pro over internet using TCP protocol, in this case TB Pro should be installed on your PC too.
+					Additionally you should have permanent IP address for your home router (or kids PC). <br>
+					This permanent address can get you your internet provider.<br><br>
+					If you use router then open port 18481 on it for kids PC
+					(TB Pro uses this 18481 port by default, but you can change it and use differnt ports for different PC's,
+					so you can open different ports on router for differnt kids PC's ).<br>
+					<br>
+					If you want to change 18481 port:<br>
+					On kid PC use <b>TB-&gt;Control panel-&gt;Options-&gt;Network-&gt;Connection options-&gt;TCP port</b> panel to set needed port.<br>
+					On your PC use <b>TB-&gt;Menu-&gt;Network-&gt;KID_PC_IP-&gt;Options</b> command to set used port on kid PC.
+					</p>
+				</div>
+			</li>
+			<li class='item' id='141203'>
+				<div class='q'>
+					I use the router at home, what can I do to connect to home PC from internet?
+				</div>
+				<div class='a'>
+					<p>You should allow the port 18481 for home PC in the router.
+					</p>
+				</div>
+			</li>
+			<li class='item' id='p2B'>
+				<div class='q'>
+					'Find Remote Computer' does not  find all remote computers. Why?
+				</div>
+				<div class='a'>
+					<p>Please try to open Time Boss <b>Control panel</b> with administrator's rights in Windows.
+					<br>
+					<br>
+					For that choose <b>Hide</b> in popup menu for tray icon of Time Boss.<br>
+					<br>
+					Then open Time Boss with administrators rights (Run-&gt;Program files-&gt;Time Boss-&gt;time_boss.exe-&gt;right mouse click and choose<b> Run with administrators rights</b> from popup menu).<br>
+					<br>
+					Then try to use <b>Find remote computer</b> window.
+					<br>
+					<br>
+					The next way is to add computer names directly in the file <b>time_boss_network2.ini</b> located in Time Boss folder.
+					<br>
+					<br>
+					It's a simple text file, you can edit it with Notepad. Each computer name must be on the new line.<br> 
+					If TB has the specific TCP port on some computer, so this port should be set after computers name in the line (e.g. 122.22.22.22  PORT:16000 ). <br>
+					<br>
+					Please open Notepad with administrator's rights too.</p>
+				</div>
+			</li>
+			<li class='item' id='140218'>
+				<div class='q'>
+					How to change the remaining time on remote PC?
+				</div>
+				<div class='a'>
+					<p>
+					To change the remaining time on remote PC is two ways:<br><br>
+					1. To connect to remote PC you can use <b>Menu-&gt;Network-&gt;remote PC-&gt;Connect</b>. 
+					In this case the settings will be loaded from remote PC to your PC.
+					You can change remaining time using "Yellow" button on <b>Computer time</b> panel for any needed user.<br>
+					When you press <b>Save</b> and <b>Menu-&gt;Return to this computer</b> all settings will be sent to remote PC.<br><br>
+					2. To open <b>Remaining time</b> window for remote PC you can use  <b>Menu-&gt;Network-&gt;remote PC-&gt;Today's control. Last remaining time for active user</b>.
+					In this case the last remaining time of current active user on remote PC will be loaded from remote PC to your PC.
+					In opened window you can change the remaining time for active user on remote PC.<br>
+					If there is no active user with Subordinate rights on remote PC then the warning message will appear instead <b>Remaining time</b> window.<br>
+					<br>
+					You can do this operations several times in any order.
+					</p>
+				</div>
+			</li>
+			<li class='item' id='p2A'>
+				<div class='q'>
+					How to protect the connection to remote PC with Time Boss Pro password?
+				</div>
+				<div class='a'>
+					<p>Please set option <b>Protect remote connection</b> (<b>Control panel</b>-&gt;<b>Options</b>-&gt;<b>Password</b> panel) on remote PC.
+					<br>
+					<br>
+					Only since version 2.49</p>
+				</div>
+			</li>
+			<li class='item' id='p3'>
+				<div class='q'>
+					How to use Backup Folder for screen shots? 
+				</div>
+				<div class='a'>
+					<p>If you define a folder, the program will write screenshots to this folder as well. </p>
+					<p>This
+					will allow you to view on the one (parental) computer all screenshots
+					that are taken on the other PCs. Of course you 'll have to install TB
+					on all computers you are using. </p>
+					<p>To do it, you have </p>
+					<p>1. To give full access (make share) to the screenshot folder on the parental PC (Time Boss/Screenshots) for other computers. </p>
+					<p>2. Then to chose this folder as a Backup folder on the other computers.</p>
+				</div>
+			</li>
+			<li class='item' id='p4' id='p4'>
+				<div class='q'>
+					How to see the event log on a remote PC?
+				</div>
+				<div class='a'>
+					<p>Choose
+					in menu "Network" necessary PC and press menu item "Connect". If the
+					needed PC works (and Time Boss Pro works on it too) then program will
+					connect to Time Boss Pro on remote PC and load needed data. The caption
+					of program will have string "You are on remote PC!".</p>
+					<p>Choose button "Event log". Choose panel "Event log".</p>
+				</div>
+			</li>
+			<li class='item' id='p5' id='p5'>
+				<div class='q'>
+					How to see the screenshots on a remote PC?
+				</div>
+				<div class='a'>
+					<p>Choose
+					in menu "Network" necessary PC and press menu item "Connect". If the
+					needed PC works (and Time Boss Pro works on it) then program will
+					connect to Time Boss Pro on remote PC and load needed data. The caption
+					of program will have string "You are on remote PC!".</p>
+					<p>Choose button "Event log". Choose panel "Screenshots". </p>
+				</div>
+			</li>
+			<li class='item' id='p6' id='p6'>
+				<div class='q'>
+					Where will save screenshots from remote PC on your local PC?
+				</div>
+				<div class='a'>
+					<p>When
+					you press button "Save screenshot" then this screenshot will be saved
+					in a defined screenshot folder on local PC. The subfolder will have
+					the same name as the remote PC. <br>
+					In future you would be able to see this screenshot in a program on a local PC ("Event log"-&gt;"Screenshots"). </p>
+				</div>
+			</li>
+			<li class='item' id='p7' id='p7'>
+				<div class='q'>
+					Can I use TB Pro in a mixed network of  Vista, Windows 7, Windows 8 and Windows XP computers?
+				</div>
+				<div class='a'>
+					<p>Yes,  you can use TB Pro (with the same  first number of version) in a mixed network of  Vista, Windows 7, Windows 8 and Windows XP computers
+					without limitation.
+					</p>
+				</div>
+			</li>
+			<li class='item' id='20151102C'>
+				<div class='q'>
+					I am not clear on what needs to be downloaded onto my PC laptop in order to control the other 3 computers. 
+					I know I need to download timeboss pro onto my 3 kids’ computers, but what exactly do I download onto mine?
+				</div>
+				<div class='a'>
+					<p>You should install TB Pro on your laptop too.<br><br>
+					To prevent monitoring of your session - disable the event log and screenshots in TB
+					(<b>TB-&gt;Control panel-&gt;User-&gt;Event log</b> deactivate Enable and Screenshots options).<br><br>
+					If you do not want to see the TB icon in the system tray then activate <b>Stealth mode</b> option
+					<b>TB-&gt;Control panel-&gt;User-&gt;Miscellaneous-&gt;Extended</b>. 
+					In this case you can open the TB Control panel using TB shortcut on the desktop 
+					or in the Windows Start menu.
+					</p>
+				</div>
+			</li>
+			<li class='item' id='p8' id='p8'>
+				<div class='q'>
+					The syncronization does not work, what can i do?
+				</div>
+				<div class='a'>
+					<p> Please check: <br>
+					<br>1. The user name - then should be the same on all PC's. 
+					<br>
+					2. The Windows system time should be the same (+- 30 sec.) on all PC's. 
+					<br>
+					3. The  options on panel <b>Network-&gt;Synchronizing time limitation</b> then should be the same on all PC's
+					<br>4. The conection from all PC's to the shared resource (file or PC).
+					If you use the synchronization with shared file - this file should be accessible for reading and writing (you can try to delete it - if you can, then is ok) 
+					from each PC all time when PC's are working.<br> 
+					<br>
+					If you use Samba for sharing files, please note - the children with blank password
+					in Windows have not access in Samba. So the children for which the 
+					synchronisation did not work, were the ones that had a blank password and <br>
+					therefore could not access the Samba share. <br>
+					<br>
+					If you use the synchronization with TB Pro on remote PC - this PC should be 
+					active  all time when PC's are working.<br>
+					<br> 
+					Please check the connection from each PC to this remote PC. 
+					<br>
+					<br>
+					To do that: on each PC add this remote PC to Network menu (<b>Menu-&gt;Network-&gt;Find remote computer</b>) 
+					and send from each PC some text message to remote PC (<b>Menu-&gt;Network-&gt;Remote_PC_Name-&gt;Send text message</b>), 
+					all messages should be appears on remote PC.
+					<br>
+					<br>
+					Please note the shared resource should be accessible each time all PC's work.
+					<br>
+					<br>
+					For the test you can add (in Windows and in TB) the new user on all PC's - and check the synchronization for him
+					</p>
+				</div>
+			</li>
+			<li class='item' id='111213A'>
+				<div class='q'>
+					If I have 3 PCs in my house and I want to limit access to
+					2 hours/day (cumulative across all PCs), is that possible?
+				</div>
+				<div class='a'>
+					<p>Yes, it is possible. But you should have shared resource (PC or shared file storage)
+					which will be active all time.
+					</p>
+				</div>
+			</li>
+			<li class='item' id='160728A'>
+				<div class='q'>
+					Can you explain this more clearly please. In my setup I have 3 computers
+					running Time Boss Pro. These three computers are on a domain controlled by a
+					server running Windows Server 2008R2.  All user accounts have a home
+					directory on the server, drive "O". What would I need to change/ configure
+					in order to have those 3 PC's limit access to 2 hours a day (cumulative
+					across all PC's)?
+				</div>
+				<div class='a'>
+					<p>
+					1. On each PC in TB Pro you should activate the option <b>Synchronization with the shared file...</b> (<b>TB-&gt;Control panel-&gt;Options-&gt;Network</b>) 
+					and input the shared file name, any,  e.g. O:\\dad\param.dat.
+					<br>File should be exists, you can create it with Notepad and then rename it. It is not nessesary to install TB Pro on shared device.<br><br>
+					2. Try to open this shared folder O:\\dad\ from each PC and test to write(read) any file to it.
+					This folder should be available to read and write.<br><br>
+					3. Set needed time limitation (2 Hours) for each kid on the one PC. This settings will be sent on others PCs automatically after 2 mins.
+					Please check - all kids should have the same User names (accounts) on each PC. It's ok if you use domain.<br><br>
+					When the synchronization works you can see "synchronizations" events in the event log.
+					</p>
+				</div>
+			</li>
+			<li class='item' id='111213B'>
+				<div class='q'>
+					The description states " TB PRO can *synchronize time limitation and
+					settings of users on multiple computers*. ", but does this mean the
+					limitations are simply the same (i.e. 2 hours/day) on each PC, or does it
+					mean 2 hours/day no matter which PC in the house is used?
+				</div>
+				<div class='a'>
+					<p>It mean 2 hours per day no matter PC is used.
+					</p>
+				</div>
+			</li>
+			<li class='item' id='p9' id='p9'>
+				<div class='q'>
+					How to define the folder for screenshots on the FTP server?
+				</div>
+				<div class='a'>
+					<p>You should enter the name of the destination folder in the fields Subfolder for screenshots and Subfolder for event log.
+					<br>
+					For example, if you have the folder TB_FTP on FTP server then you need to enter TB_FTP.
+					If you need to use in this folder separate subfolders for screenshots and event log files then use \ notation.
+					<br>
+					See <a href="screenshots/tb_ftp_folder.jpg">picture</a>.</p>
+				</div>
+			</li>
+			<li class='item' id='140128B'>
+				<div class='q'>
+					Can I use cloud storage for synchronizing the remaining time on multiple computers?
+				</div>
+				<div class='a'>
+					<p>Yes, you can.<br>Of course, if the child is still not able to disable the plugged cloud storage :). <br>
+					There are many cloud storage. <br> For example, we will use a free cloud storage <b>Dropbox</b>. <br>
+					First, you need to register in Dropbox, this would require your email (if needed you can create the new email). <br>
+					After registration install and activate the Dropbox client on all needed computers for all needed Windows users (children).<br>
+					In the Dropbox client configuration (<b>Preferences</b>, a button at the top right) 
+					activate option <b>General-&gt;Start Dropbox on system startup</b> 
+					and disable option <b>General-&gt;Show desktop notification</b>. <br>
+					By default, the Dropbox folder located in the users folders, so this folder is different for every users on the same computer. 
+					You should set that the folder has been one and the same for all users on this computer, for example c:\Syn01\Dropbox. <br>
+					To change the location of the Dropbox folder open <b>Account-&gt;Location</b>.<br>
+					Now you can enable synchronization in TB Pro <b>Using file on a shared device on the network</b> and select
+					any file name (e.g. 123.dat) in this Dropbox folder.<br> 
+					Just configure the Dropbox clients on other computers.<br>
+					Of course the Dropbox folder location on different computers may be different.<br>
+					Then open TB Pro on other computers and select on panel  <b>Using file on a shared device on the network</b>
+					the same file in Dropbox folder that on the first computer (e.g. 123.dat). 
+					</p>
+			</div>
+			</li>
+			<li class='item' id='170303D'>
+				<div class='q'>
+					Can i use my google drive to store the screenshots?
+				</div>
+				<div class='a'>
+					<p>Yes, of course.<br>
+					Please activate your <a href="http://www.howtogeek.com/228989/how-to-use-the-desktop-google-drive-app/">google drive on kid's PC</a>.<br>
+					Then open TB Control panel and activate the option <b>Backup</b> (TB-&gt;Control panel-&gt;Options-&gt;General-&gt;Screenshots)
+					and select the any google drive folder in the <b>Folder</b> text box.
+					</p>
+				</div>
+			</li>
+			<li class='item' id='20151102D'>
+				<div class='q'>
+					Is there a way to associate the non-local account of the user on a Windows8  machine with 
+					the local account of the Windows 7 machine so that the usage limits/restrictions remain in sync?
+				</div>
+				<div class='a'>
+					<p>
+					Yes, the full user name should be the same on all PC's.You can see this full user name in TB event log.<br><br>
+					E.g.:<br>
+					user name: mike@outlook.com  full name:Mike<br>
+					user name: mike_local  full name:Mike
+					</p>
+				</div>
+			</li>
+		</ol>
 	</div>
 
 <? 
